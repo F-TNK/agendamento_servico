@@ -7,11 +7,9 @@ export default function CardServico({ servico, categoria }) {
   return (
     <li>
       <label>
-        <ul className="servList">
-          <li className="servItens">
-            <h3>
-              <span className="servName">{servico.nome}</span>
-            </h3>
+        <ul className={style.servCard}>
+          <li className={style.servItens}>
+            <h3 className={style}>{servico.nome}</h3>
           </li>
           <li>
             <span>Preço: R${servico.preco}</span>
@@ -19,9 +17,9 @@ export default function CardServico({ servico, categoria }) {
           <li>
             <span>Duração: {servico.duracaoMin} min</span>
           </li>
-          {/* <li>
-            <span>Caegoria: {categoria.nome} min</span>
-          </li> */}
+          <li>
+            <span>Categoria: {categoria.nome}</span>
+          </li>
         </ul>
       </label>
     </li>
