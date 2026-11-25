@@ -1,23 +1,15 @@
 export const CATEGORIAS = [
   {
     id: 1,
-    nome: "Cabelo",
+    nome: "Cabeleireiro",
   },
   {
     id: 2,
-    nome: "Barba",
-  },
-  {
-    id: 3,
     nome: "Estética",
   },
   {
-    id: 4,
-    nome: "Manicure",
-  },
-  {
-    id: 5,
-    nome: "Massagem",
+    id: 3,
+    nome: "Spa",
   },
 ];
 
@@ -34,11 +26,11 @@ export const SERVICOS = [
   },
   {
     id: 2,
-    nome: "Barba Completa",
+    nome: "Barba",
     duracaoMin: 45,
     preco: 35.5,
     status: "ativo",
-    categoriaId: 2,
+    categoriaId: 1,
     criadoEm: "2026-11-09T10:15:00Z",
   },
   {
@@ -47,7 +39,7 @@ export const SERVICOS = [
     duracaoMin: 60,
     preco: 120.0,
     status: "inativo",
-    categoriaId: 3,
+    categoriaId: 2,
     criadoEm: "2026-11-09T11:30:00Z",
   },
   {
@@ -56,7 +48,7 @@ export const SERVICOS = [
     duracaoMin: 50,
     preco: 60.0,
     status: "ativo",
-    categoriaId: 4,
+    categoriaId: 2,
     criadoEm: "2026-11-09T12:00:00Z",
   },
   {
@@ -65,7 +57,7 @@ export const SERVICOS = [
     duracaoMin: 60,
     preco: 150.0,
     status: "ativo",
-    categoriaId: 5,
+    categoriaId: 3,
     criadoEm: "2026-11-09T13:40:00Z",
   },
 ];
