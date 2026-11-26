@@ -5,7 +5,7 @@ import { useState } from "react";
 import { SERVICOS, CATEGORIAS } from "@/dados/exemplo.js";
 import CardServico from "@/components/CardServico/CardServico";
 
-export default function ListaServico() {
+export default function ListaServicos() {
   const [servicos, setServicos] = useState(SERVICOS);
   const [filtro, setFiltro] = useState("todas");
 
@@ -18,7 +18,7 @@ export default function ListaServico() {
           <CardServico
             key={servico.id}
             servico={servico}
-            categoria={categoria ? categoria.nome : "Sem"}
+            categoria={categoria ? categoria.nome : "Sem categoria"}
           />
         );
       })}
