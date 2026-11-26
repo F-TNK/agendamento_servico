@@ -7,21 +7,25 @@ import CardServico from "@/components/CardServico/CardServico";
 
 export default function ListaServicos() {
   const [servicos, setServicos] = useState(SERVICOS);
-  const [filtro, setFiltro] = useState("todas");
 
   return (
-    <ul className={style.servList}>
-      {servicos.map((servico) => {
-        const categoria = CATEGORIAS.find((c) => c.id === servico.categoriaId);
+    <div>
+      {" "}
+      <ul className={style.servList}>
+        {servicos.map((servico) => {
+          const categoria = CATEGORIAS.find(
+            (c) => c.id === servico.categoriaId
+          );
 
-        return (
-          <CardServico
-            key={servico.id}
-            servico={servico}
-            categoria={categoria ? categoria.nome : "Sem categoria"}
-          />
-        );
-      })}
-    </ul>
+          return (
+            <CardServico
+              key={servico.id}
+              servico={servico}
+              categoria={categoria ? categoria.nome : "Sem categoria"}
+            />
+          );
+        })}
+      </ul>
+    </div>
   );
 }

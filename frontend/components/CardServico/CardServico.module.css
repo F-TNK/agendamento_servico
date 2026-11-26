@@ -1,4 +1,12 @@
-/* .servList,
-.servItens {
+.servCard {
   list-style-type: none;
-} */
+  display: flex;
+  flex-direction: column;
+  background: var(--cor-fundo);
+  border: 1px solid;
+  border-top: 4px solid;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
