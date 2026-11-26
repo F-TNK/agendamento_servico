@@ -3,10 +3,12 @@
 import style from "./Filtro.module.css";
 import { useState } from "react";
 
-export default function Filtro({ CATEGORIAS, selecionada, selecionar }) {
+export default function Filtro({ categorias, selecionada, selecionar }) {
   return (
     <div className={style.filtro}>
-      <label className={style.label}>Categorias </label>
+      <label className={style.label} htmlFor="filtro">
+        Categorias{" "}
+      </label>
 
       <select
         id="filtro"
@@ -15,7 +17,7 @@ export default function Filtro({ CATEGORIAS, selecionada, selecionar }) {
         onChange={(e) => selecionar(e.target.value)}
       >
         <option value="">Todas</option>
-        {CATEGORIAS.map((categoria) => (
+        {categorias.map((categoria) => (
           <option key={categoria.id} value={categoria.id}>
             {categoria.nome}
           </option>

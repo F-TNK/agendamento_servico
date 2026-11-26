@@ -10,3 +10,8 @@
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
   transition: transform 0.15s, box-shadow 0.15s;
 }
+
+.link {
+  text-decoration: none;
+  color: var(--cor-texto);
+}
